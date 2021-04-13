@@ -93,38 +93,47 @@ html[data-theme="night"] .weather {
   }
 
 
-.icon-01 {
-    background-image: url("./img/icons/01.png");
+.icon-01d,
+.icon-01n {
+    background-image: url("./img/icons/01d.png");
 }
 
-.icon-02 {
-  background-image: url("/img/icons/02.png");
+.icon-02d,
+.icon-02n {
+  background-image: url("/img/icons/02d.png");
 }
 
-.icon-03 {
-  background-image: url("/img/icons/03.png");
+.icon-03d,
+.icon-03n {
+  background-image: url("/img/icons/03d.png");
 }
 
-.icon-04 {
-  background-image: url("/img/icons/04.png");
+.icon-04d,
+.icon-04n {
+  background-image: url("/img/icons/04d.png");
 }
 
-.icon-09 {
-  background-image: url("/img/icons/09.png");
+.icon-09d,
+.icon-09n {
+  background-image: url("/img/icons/09d.png");
 }
 
-.icon-10 {
-  background-image: url("/img/icons/10.png");
+.icon-10d,
+.icon-10n {
+  background-image: url("/img/icons/10d.png");
 }
 
-.icon-11 {
-  background-image: url("/img/icons/11.png");
+.icon-11d,
+.icon-11n {
+  background-image: url("/img/icons/11d.png");
 }
 
-.icon-13 {
-  background-image: url("/img/icons/13.png");
+.icon-13d,
+.icon-13n {
+  background-image: url("/img/icons/13d.png");
 }
 
-.icon-50 {
-  background-image: url("/img/icons/50.png");
+.icon-50d,
+.icon-50n {
+  background-image: url("/img/icons/50d.png");
 }
