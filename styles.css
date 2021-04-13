@@ -37,7 +37,7 @@ html[data-theme="night"] .weather {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 7em;
+    padding-top: 1em;
 }
 
 .current{
@@ -76,8 +76,21 @@ html[data-theme="night"] .weather {
   
   .forecast-temperature {
     font-size: 1.5em;
+    margin-bottom: 2em;
   }
- 
+  
+.details {
+      margin-bottom: 2em;
+  }
+
+  .details-name {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+  }
+  
+  .details-value {
+    font-size: 1.5em;
+  }
 
 
 .icon-01 {
