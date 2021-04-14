@@ -36,8 +36,9 @@ html[data-theme="night"] .weather {
 
 .container {
     max-width: 1200px;
+    max-height: 450px;
     margin: 0 auto;
-    padding-top: 1em;
+    padding-top: 7em;
 }
 
 .current{
@@ -56,8 +57,10 @@ html[data-theme="night"] .weather {
 .current-temperature {
     font-size: 5em;
 }
+
 .forecast-time {
     font-size: 1.2em;
+    text-align: end;
 }
 
 .forecast-item {
@@ -70,8 +73,8 @@ html[data-theme="night"] .weather {
     background-repeat: no-repeat;
     margin-top: 30px;
     background-size: contain;
-    margin-left: 40px;
     margin-bottom: 1em;
+    align-items: flex-end;
   }
   
   .forecast-temperature {
@@ -89,9 +92,12 @@ html[data-theme="night"] .weather {
   }
   
   .details-value {
+    margin-left: 5px;
     font-size: 1.5em;
   }
-
+.container-details {
+  padding-top: 50px;
+}
 
 .icon-01d,
 .icon-01n {
