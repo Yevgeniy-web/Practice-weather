@@ -1,5 +1,15 @@
-const url = 'js/data.json';
-const temperatureUnit = '°C';
-const humidityUnit = ' %';
-const pressureUnit = ' мм. рт. ст.';
-const windUnit = ' м/с';
+fetch('http://api.openweathermap.org/data/2.5/weather?id=687700&appid=7c26280d8eaf1f2bede2a729f7537669')
+.then(function (resp) {return resp.json() })
+.then(function (data) {
+  console.log(data);
+  /*Обнаружение местоположения*/
+  document.querySelector('.current-city').textContent = data.name;
+  document.querySelector('.current-description').textContent = data.weather[0]['description'];
+  document.querySelector('.current-temperature').textContent = Math.round(data.main.temp - 273) + '°C';
+  document.querySelector('.feelslike .details-value').textContent = Math.round(data.main.feels_like - 273) + '°C';
+  document.querySelector('.humidity .details-value').textContent = Math.round(data.main.humidity) + '%';
+  document.querySelector('.pressure .details-value').textContent = Math.round(data.main.pressure) + ' мм. рт. ст.';
+})
+.catch (function () {
+
+});
