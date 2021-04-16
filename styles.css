@@ -14,7 +14,7 @@ body {
 }
 
 .weather {
-    background: url(/img/bg_main.jpg) no-repeat center;
+    background: url(img/bg_main.jpg) no-repeat center;
     width: 100%;
     min-height: 100vh;
 }
@@ -32,7 +32,6 @@ html[data-theme="night"] .weather {
   background: linear-gradient(360deg, #55707e 0%, rgba(255, 255, 255, 0) 100%), #042232;
 }
 */
-
 
 .container {
     max-width: 1200px;
@@ -63,18 +62,18 @@ html[data-theme="night"] .weather {
     text-align: end;
 }
 
+
 .forecast-item {
     text-align: center;
   }
 
 .forecast-icon {
     width: 100px;
-    height: 120px;
+    height: 60px;
     background-repeat: no-repeat;
     margin-top: 30px;
     background-size: contain;
     margin-bottom: 1em;
-    align-items: flex-end;
   }
   
   .forecast-temperature {
@@ -99,47 +98,48 @@ html[data-theme="night"] .weather {
   padding-top: 50px;
 }
 
-.icon-01d,
-.icon-01n {
+
+
+.icon-01d {
     background-image: url("./img/icons/01d.png");
 }
 
-.icon-02d,
-.icon-02n {
+.icon-02d
+ {
   background-image: url("/img/icons/02d.png");
 }
 
-.icon-03d,
-.icon-03n {
+.icon-03d
+ {
   background-image: url("/img/icons/03d.png");
 }
 
-.icon-04d,
-.icon-04n {
+.icon-04d
+{
   background-image: url("/img/icons/04d.png");
 }
 
-.icon-09d,
-.icon-09n {
+.icon-09d
+{
   background-image: url("/img/icons/09d.png");
 }
 
-.icon-10d,
-.icon-10n {
+.icon-10d
+{
   background-image: url("/img/icons/10d.png");
 }
 
-.icon-11d,
-.icon-11n {
+.icon-11d
+ {
   background-image: url("/img/icons/11d.png");
 }
 
-.icon-13d,
-.icon-13n {
+.icon-13d
+{
   background-image: url("/img/icons/13d.png");
 }
 
-.icon-50d,
-.icon-50n {
+.icon-50d
+ {
   background-image: url("/img/icons/50d.png");
 }
