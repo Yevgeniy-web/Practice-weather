@@ -1,19 +1,27 @@
 /*Обнаружени местоположения*/
-navigator.geolocation.getCurrentPosition(position => {
-  console.log(position) 
- })
+var getWeather = function(data) {
+  $.getJSON('http://api.openweathermap.org/data/2.5/weather', {
+      lat: data.lat,
+      lon: data.lon,
+      appid: "7c26280d8eaf1f2bede2a729f7537669"
+  }, showWeather, 'jsonp');
+  navigator.geolocation.getCurrentPosition(position => {
+    const { latitude, longitude } = position.coords;
+    // Show a map centered at latitude / longitude.
+  });
+};
  
- fetch('https://api.openweathermap.org/data/2.5/group?id=709930,687700,687699&appid=7c26280d8eaf1f2bede2a729f7537669')
- .then(function (resp) {return resp.json() })
- .then(function (data) {
-   console.log(data);
-   document.querySelector('.current-city').textContent = data.name;
-   document.querySelector('.current-description').textContent = data.weather[0]['description'];
-   document.querySelector('.current-temperature').textContent = Math.round(data.main.temp - 273) + '°C';
-   document.querySelector('.feelslike .details-value').textContent = Math.round(data.main.feels_like - 273) + '°C';
-   document.querySelector('.humidity .details-value').textContent = Math.round(data.main.humidity) + '%';
-   document.querySelector('.pressure .details-value').textContent = Math.round(data.main.pressure) + ' мм. рт. ст.';
- })
- .catch (function () {
- 
- });
+var showWeather = function(data) {
+  $(".current-temperature").text (Math.round(data.main.temp - 273) + '°C')
+  $(".current-description").text(data.weather[0].description)
+  $(".current-city").text(data.name)
+  $(".feelslike .details-value").text (Math.round(data.main.feels_like - 273) + '°C')
+  $(".pressure .details-value").text (data.main.pressure  + ' мм. рт. ст.')
+  $(".humidity .details-value").text (data.main.humidity  + ' %')  
+};
+
+$(document).ready(function() {
+  {
+      $.getJSON('http://ip-api.com/json', getWeather)
+  }
+})
