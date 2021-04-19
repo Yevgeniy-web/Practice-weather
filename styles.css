@@ -69,9 +69,9 @@ html[data-theme="night"] .weather {
 
 .forecast-icon {
     width: 100px;
-    height: 60px;
+    height: 100px;
     background-repeat: no-repeat;
-    margin-top: 30px;
+    margin-top: 10px;
     background-size: contain;
     margin-bottom: 1em;
   }
